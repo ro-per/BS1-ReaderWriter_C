@@ -16,16 +16,14 @@ int main(int argc, char** argv) {
     reader_init();
     writer_init();
 
-    while(1) {
+    int i=0;
+    while(i!=50) {
         mon_print_status();
 
         printf("Press enter for the next step\n");
         getc(stdin);
+        i++;
     }
-
-
-
-    //getc(stdin);
 
     reader_stop();
     writer_stop();
